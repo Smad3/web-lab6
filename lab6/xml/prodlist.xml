@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<!DOCTYPE catalog[
+	<!ELEMENT catalog (sections, stock)>
+	<!ELEMENT sections (sect+)>
+	<!ELEMENT sect (#PCDATA)>
+	<!ATTLIST sect id ID #REQUIRED>
+	<!ELEMENT stock (product*)>
+	<!ELEMENT product (name, price, serial, year, img, additional*)>
+	<!ATTLIST product sect_id IDREF #REQUIRED>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT price (#PCDATA)>
+	<!ELEMENT serial (#PCDATA)>
+	<!ELEMENT year (#PCDATA)>
+	<!ELEMENT img (#PCDATA)>
+	<!ELEMENT additional (#PCDATA)>
+]>
+<catalog>
+	<sections>
+		<sect id="s01">Бинт</sect>
+		<sect id="s02">Йод</sect>
+		<sect id="s03">Пластир</sect>
+		<sect id="s04">Знеболювальне</sect>
+		<sect id="s05">Зубна щітка</sect>
+	</sections>
+	<stock>
+		<product sect_id="s01">
+			<name>Бинт еластичний 2B 1 м x 10 см (22x100x1)</name>
+			<price>55</price>
+			<serial>0001</serial>
+			<year>2023</year>
+			<img>0001.jpg</img>
+			<additional>Виробник: Алком</additional>
+			<additional>Довжина: 8 м</additional>
+		</product>
+		<product sect_id="s01">
+			<name>Бинт еластичний медичний середньої розтяжності 100 мм * 8,0 м</name>
+			<price>398</price>
+			<serial>0002</serial>
+			<year>2023</year>
+			<img>0002.jpg</img>
+		</product>
+		<product sect_id="s01">
+			<name>Бинт еластичний 8см х 2,5 м середньої розтяжності ТМ Білосніжка</name>
+			<price>44</price>
+			<serial>0003</serial>
+			<year>2023</year>
+			<img>0003.jpg</img>
+			<additional>Виробник: Білосніжка</additional>
+			<additional>Країна виробник: Україна</additional>
+		</product>
+		<product sect_id="s02">
+			<name>Йод 5% 20мл</name>
+			<price>10</price>
+			<serial>0004</serial>
+			<year>2023</year>
+			<img>0004.jpg</img>
+			<additional>Состав:действующее вещество: йод; 100 мл раствора содержат йода</additional>
+		</product>
+		<product sect_id="s02">
+			<name>Синий Йод (Йодинол) 1кг 0.1%</name>
+			<price>105</price>
+			<serial>0005</serial>
+			<year>2023</year>
+			<img>0005.jpg</img>
+			<additional>Для ветеринарной медицины. Применяется для дезинфекции</additional>
+		</product>
+		<product sect_id="s02">
+			<name>Таблетки ELIT-PHARM Йод активный 50 таб</name>
+			<price>24</price>
+			<serial>0006</serial>
+			<year>2023</year>
+			<img>0006.jpg</img>
+			<additional>Количество порций / капсул 50 шт</additional>
+		</product>
+		<product sect_id="s03">
+			<name>Пластир медичний 2B на бавовняній основі 5м 1.25см</name>
+			<price>13</price>
+			<serial>0007</serial>
+			<year>2023</year>
+			<img>0007.jpg</img>
+			<additional>Тип: фіксуючий</additional>
+			<additional>Матеріал: основи ткана</additional>
+		</product>
+		<product sect_id="s03">
+			<name>Пластир медичний 2B на бавовняній основі 50 шт.</name>
+			<price>61</price>
+			<serial>0008</serial>
+			<year>2023</year>
+			<img>0008.jpg</img>
+			<additional>Тип: захисний</additional>
+			<additional>Кількість: 50 шт.</additional>
+		</product>
+		<product sect_id="s03">
+			<name>Пластир Iplast на нетканій основі 6х10см №10</name>
+			<price>43</price>
+			<serial>0009</serial>
+			<year>2023</year>
+			<img>0009.jpg</img>
+			<additional>Виробник: Cansin Saglik Gerecleri</additional>
+		</product>
+		<product sect_id="s04">
+			<name>Цитрамон-Дарниця таблетки</name>
+			<price>14</price>
+			<serial>0010</serial>
+			<year>2023</year>
+			<img>0010.jpg</img>
+			<additional>Дозування: ацетилсаліцилова кислота: 240 мг, парацетамол: 180 мг, кофеїн: 30 мг</additional>
+		</product>
+		<product sect_id="s04">
+			<name>Крем-анестетик ТКТХ 40% для знеболювання.(Синій) 10 грам.</name>
+			<price>150</price>
+			<serial>0011</serial>
+			<year>2023</year>
+			<img>0011.jpg</img>
+			<additional>Країна виробник: Китай</additional>
+		</product>
+		<product sect_id="s05">
+			<name>Зубна щітка Colgate Класика Здоров'я середня 1 шт. (8590232000050)</name>
+			<price>29</price>
+			<serial>0012</serial>
+			<year>2023</year>
+			<img>0012.jpg</img>
+			<additional>Жорсткість: середня</additional>
+			<additional>Призначення: для дорослих</additional>
+		</product>
+		<product sect_id="s05">
+			<name>Одноразовые зубные щетки с пастой Ampri Med Comfort 100 шт, Зелёный</name>
+			<price>395</price>
+			<serial>0013</serial>
+			<year>2023</year>
+			<img>0013.jpg</img>
+			<additional>длина рукояти: ~ 15 см, головы - 2,6 см</additional>
+		</product>
+	</stock>
+</catalog>

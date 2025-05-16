@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 780px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    width: 780px;
+    background: url('../img/head.png') no-repeat;
+    z-index: 4;
+}
+
+.head-logo {
+    position: relative;
+    left: 15px;
+    top: 3px;
+    width: 103px;
+    height: 57px;
+}
+
+.head-left {
+    background: url("../img/left_triangle.png") no-repeat;
+    position: relative;
+    left: 0px;
+    top: 6px;
+    width: 301px;
+    height: 91px;
+}
+
+    .head-left > a {
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+        font-family: 'Times New Roman';
+        font-size: 10px;
+        text-align: center;
+    }
+
+        .head-left > a :hover {
+            text-decoration: underline;
+        }
+
+        .head-left > a > span {
+            display: inline-block;
+            padding: 27px 10px 0 0;
+        }
+
+.a-subscribtion {
+    background: url("../img/letter.png") 7px 0 no-repeat;
+    position: relative;
+    left: 28px;
+    top: 6px;
+}
+
+.a-price {
+    background: url("../img/copy.png") 4px 0 no-repeat;
+    position: relative;
+    left: 50px;
+    top: 6px;
+}
+
+.a-deliver {
+    background: url("../img/invalid.png") 5px 0 no-repeat;
+    position: relative;
+    left: 65px;
+    top: 6px;
+}
+
+.a-shop {
+    background: url("../img/pc.png") 26px 6px no-repeat;
+    position: relative;
+    left: -125px;
+    top: 46px;
+}
+
+.a-report {
+    background: url("../img/phone.png") 3px 6px no-repeat;
+    position: relative;
+    left: -122px;
+    top: 46px;
+}
+
+.head-right {
+    background: url("../img/right_triangle.png") no-repeat;
+    position: relative;
+    left: 230px;
+    top: -98px;
+    width: 550px;
+    height: 65px;
+    font-family: Verdana;
+    font-size: 8px;
+}
+
+.login-menu {
+    position: relative;
+    left: -273px;
+    color: black;
+    text-decoration: none;
+    text-align: right;
+}
+
+    .login-menu > div {
+        padding: 5px 0 0 38px;
+    }
+
+        .login-menu > div > span {
+            padding: 0 13px 0 0;
+        }
+
+        .login-menu > div > input {
+            height: 10px;
+            width: 120px;
+        }
+
+    .login-menu > button {
+        width: 71px;
+        height: 20px;
+        font-family: Verdana;
+        font-size: 8px;
+        position: relative;
+        left: 84px;
+        top: -28px;
+    }
+
+.litle-menu {
+    position: relative;
+    left: 486px;
+    top: -54px;
+    display: inline-grid;
+}
+
+    .litle-menu > a {
+        text-decoration: none;
+        color: black;
+    }
+
+        .litle-menu > a :hover {
+            text-decoration: underline;
+        }
+
+
+.b-before {
+    position:relative;
+    height: 7px;
+}
+
+.b-stock {
+    position: relative;
+    left: -20px;
+}
+
+.b-friends {
+    position: relative;
+    left: -45px;
+}
+
+.b-subscribtion {
+    position: relative;
+    left: -63px;
+}
+
+.b-register {
+    position: relative;
+    left: -91px;
+}
+
+main {
+    font-family: Arial;
+    z-index: 0;
+    position: relative;
+    top: 121px;
+    margin: 0 0 0 158px;
+    padding: 17px 8px 0 24px;
+}
+
+.news {
+    height: 29px;
+    background: url("../img/news_triangles.png") 1px 0 no-repeat;
+    font-size: 30px;
+    margin: 0 0 9px;
+}
+
+    .news > span {
+        position: relative;
+        left: 49px;
+    }
+
+.title > ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+    .title > ul > li::before {
+        position: relative;
+        top: 3px;
+        content: '';
+        list-style-image: url("../img/swap_swap.png");
+        display: list-item;
+        float: left;
+        width: 1px;
+        margin: 0;
+    }
+
+    .title > ul > li {
+        border-top: solid 1px #4c6bb1;
+        padding: 9px 0;
+        width: 583px;
+    }
+    .title > ul:last-child {
+        border-bottom: solid 1px #4c6bb1;
+    }
+        .title > ul > li > div, .title > ul > li > span {
+            position: relative;
+            left: 17px;
+        }
+
+.title-name {
+    font-size: 14px;
+    color: #040404;
+}
+
+.title-date {
+    font-size: 12px;
+    color: #ff0000;
+}
+
+.title-text {
+    font-size: 12px;
+    color: #4c6bb1;
+}
+
+.title-link {
+    font-size: 9px;
+    color: #0350fd;
+    text-decoration: none;
+}
+.title-link :hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    top: 214px;
+    height: 100%;
+}
+
+.left-down-menu {
+    position: relative;
+    top: -49px;
+    width: 158px;
+    height: 100%;
+    background: url("../img/grey-down.png");
+}
+
+.menu {
+    background-color: #7b95ce;
+    border-radius: 0 15px 15px 0;
+    border-bottom: solid 1px black;
+    border-right: solid 1px black;
+    border-top: solid 1px black;
+    margin: 0 8px 0 0;
+}
+
+.menu-logo {
+    padding: 12px 18px 0 11px;
+}
+
+.menu > ul {
+    margin: 0 0 22px -40px;
+    font-family: Verdana;
+    font-size: 10px;
+    list-style-position: inside;
+    list-style-image: url("../img/swap.png");
+}
+
+    .menu > ul > li {
+        width: 142px;
+        padding: 4px 0 5px 7px;
+        border-bottom: solid 1px #5977b8;
+        border-top: solid 1px #bdcdf0;
+    }
+
+        .menu > ul > li > a {
+            padding: 0 0 0 3px;
+            text-decoration: none;
+            color: white;
+        }
